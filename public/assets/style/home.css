@@ -1,0 +1,511 @@
+:root {
+    /* color */
+    --primary: #002939;
+    --secondary: #ddc190;
+
+    /* font */
+    --mainfont: "Open Sans", sans-serif;
+    --headingfont: "Merriweather", serif;
+}
+
+* {
+    text-decoration: none !important;
+  }
+
+body {
+    position: relative;
+}
+.navbar {
+    height: 70px;
+    background-color: #ffff;
+}
+.navbar-nav {
+    margin-left: 300px;
+}
+
+.p button {
+    border: none;
+    background-color: #ffff;
+}
+
+.p {
+    font-size: 20xp;
+}
+
+.slider-section {
+    background-color: var(--primary);
+    border-bottom-left-radius: 220px;
+    height: 555px;
+    margin-left: 60px;
+}
+
+.sosmed {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    margin-left: -45px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 130px;
+}
+
+.sosmed i{
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 7px;
+    border-radius: 50%;
+}
+.sosmed:hover {
+    color: aqua;
+}
+/*Products*/
+
+.products {
+    margin-top: 30px;
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0px;
+}
+
+.products h1 {
+    font-family: var(--headingfont);
+    margin-top: 500px;
+    margin: 35px 0;
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products .box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 10px;
+    margin-right: 90px;
+}
+
+.products .box .card {
+    width: 290px;
+    height: 400px;
+    box-shadow: 0 0 8px #000000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: var(--bg-card);
+}
+
+.products .box .card .small_card {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.products .box .card:hover .small_card {
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.products .box .card .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products .box .card .image-r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .box .card .image img {
+    width: 100px;
+    height: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+.products .box .card .image-r img {
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.products .box .card:hover .image img {
+    transform: scale(1.1);
+}
+
+.products .box .card .small_card i {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 1px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+}
+
+.products .box .card .small_card i:hover {
+    color: var(--secondary);
+}
+
+.products .box .card .products_text h2 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products .box .card .products_text p {
+    color: #91919191;
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.products .box .card .products_text h3 {
+    margin: 7px 0;
+}
+
+.products .box .card .products_text .products_star {
+    color: orange;
+    margin-bottom: 19px;
+    /* cursor: pointer; */
+}
+
+.products .box .card .products_text .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--secondary);
+    transition: 1s;
+}
+.product .box .card .products_text .btn:hover {
+    background-color: var(--secondary) !important;
+}
+.contact h1 {
+    font-family: var(--headingfont);
+    margin: 35px 0;
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider-section .sosmed .logo .tooltip {
+    position: absolute;
+    top: 0;
+    left: 122px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 122px;
+    background: #ffffff;
+    color: var(--primary);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    -webkit-transition: 0s;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+    z-index: 9999;
+    font-family: var(--headingfont)!important;
+}
+/* footer */
+.footer {
+    background-color: var(--primary);
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 100px !important;
+  }
+
+  .footer .footer-brand {
+    color: #fff;
+    font-family: var(--headingfont);
+    font-weight: 900;
+  }
+
+  .footer .footer-brand span {
+    color: var(--secondary);
+  }
+.slider-section .sosmed .logo:hover .tooltip {
+    top: 50%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 9999;
+}
+
+.slider-section .img-hero .img-landing{
+    margin-left: 200px;
+}
+.slider-section .img-hero{
+    width: 50px;
+}
+.slider-section .text-hero .text-landing{
+    margin-left: 250px;
+    margin-top: 200px;
+    width: 500px;
+}
+.col1 a {
+    color: #fff;
+  }
+
+  .icon-footer i {
+    font-size: 2rem;
+    color: var(--secondary);
+  }
+
+  .icon-footer i:hover {
+    color: #fff;
+  }
+
+  .col2 h3,
+  .col3 h3,
+  .col4 h3,
+  .col5 h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: var(--headingfont);
+    font-weight: 700;
+  }
+
+  .col2 ul li,
+  .col3 ul li,
+  .col4 ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .col2 ul li a:hover,
+  .col3 ul li a:hover,
+  .col4 ul li a:hover {
+    color: var(--secondary) !important;
+  }
+
+  .col2 a,
+  .col3 a,
+  .col4 a {
+    color: #fff;
+  }
+.mt-6 {
+    margin-top: 70px;
+}
+
+.mt-7 {
+    margin-top: 200px;
+}
+
+.superiority-section{
+    height: 250px;
+    background-color: var(--primary);
+}
+.icon {
+    background-color: var(--secondary);
+}
+
+.bg-inti{
+    background-color: var(--primary)!important;
+}
+.bg-kedua{
+    background-color: var(--secondary)!important;
+}
+
+.head-font{
+    font-family: var(--headingfont)!important;
+}
+
+.color-inti{
+    color: var(--primary)!important;
+}
+.color-kedua{
+    color: var(--secondary)!important;
+}
+
+.detail .back{
+background-color: var(--primary);
+color: var(--secondary);
+margin-left: 900px;
+}
+.detail .back:hover{
+background-color: var(--secondary);
+color: var(--primary);
+}
+
+/*# sourceMappingURL=style.css.map */
+.wrapper {
+    padding: 0 20px 0 20px;
+    height: 600px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-login {
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.side-image {
+    background-image: url("images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+.img-login {
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    left: -1px;
+}
+.text-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+}
+.text-login {
+    color: #fff;
+    font-size: 18px;
+}
+.right-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input-field .input:focus ~ label {
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus,
+.input-field .input:valid {
+    border-bottom: 1px solid #743ae1;
+}
+.submit-login .login {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.submit-login:hover {
+    background: #776bfd;
+    color: #fff;
+}
+.signin {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span .login a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #776bfd;
+    transition: 0.5s;
+}
+span .login a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.cart .save {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+.cart .save:hover {
+    background-color: #fff;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.cart .back {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.cart .back:hover {
+    background-color: #fff;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+.cart .view {
+    background-color: #fff;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+.cart .view:hover {
+    background-color: #fff;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.title {
+    font-family: var(--headingfont);
+    margin-top: 500px;
+    margin: 35px 0;
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
